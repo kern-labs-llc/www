@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact Kern Labs about web and iOS apps or sign up for the Kern Labs newsletter."
+    />
+    <title>Contact | Kern Labs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-mark" href="index.html" aria-label="Kern Labs home">
+        <span class="brand-icon">K</span>
+        <span>Kern Labs</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="apps/mate-in-1.html">Mate in 1</a>
+        <a href="apps/mate-in-2.html">Mate in 2</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-shell page-shell-subpage" aria-labelledby="page-title">
+      <section class="contact-panel">
+        <div>
+          <p class="eyebrow">Contact us</p>
+          <h1 id="page-title">Let’s stay in touch.</h1>
+          <p class="hero-copy">
+            For app support, business questions, or product updates, email
+            <a href="mailto:hello@kern-labs.com">hello@kern-labs.com</a>.
+          </p>
+        </div>
+
+        <form class="newsletter-form" id="newsletter-form" action="#" method="post">
+          <label for="newsletter-email">Sign up for newsletter</label>
+          <div class="newsletter-row">
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            />
+            <button class="button button-primary" type="submit">Sign up</button>
+          </div>
+          <p class="form-note">
+            No backend is connected yet. Submitting this form only shows a local
+            confirmation message.
+          </p>
+          <p class="form-success" id="newsletter-success" role="status" aria-live="polite" hidden>
+            Thanks — you’re on the list.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      const newsletterForm = document.querySelector("#newsletter-form");
+      const newsletterSuccess = document.querySelector("#newsletter-success");
+
+      newsletterForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        newsletterForm.reset();
+        newsletterSuccess.hidden = false;
+      });
+    </script>
+  </body>
+</html>

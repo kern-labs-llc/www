@@ -5,20 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Kern Labs publishes thoughtful web and iOS apps with a bright, modern product focus."
+      content="Kern Labs publishes thoughtful web and iOS apps, including Mate in One and Mate in Two chess puzzle apps."
     />
-    <title>Kern Labs</title>
+    <title>Kern Labs | Web and iOS Apps</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <a class="brand-mark" href="index.html" aria-label="Kern Labs home">
+        <span class="brand-icon">K</span>
+        <span>Kern Labs</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="apps/mate-in-1.html">Mate in 1</a>
+        <a href="apps/mate-in-2.html">Mate in 2</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
     <main class="page-shell" aria-labelledby="page-title">
-      <section class="hero-card">
-        <p class="eyebrow">Web apps · iOS apps · Product experiments</p>
-        <h1 id="page-title">Kern Labs</h1>
-        <p class="hero-copy">
-          Bright, focused software for the web and iPhone. Kern Labs creates
-          modern apps that feel simple, polished, and useful from the first tap.
-        </p>
+      <section class="hero-card hero-card-home">
+        <div class="hero-content">
+          <p class="eyebrow">Web apps · iOS apps · Product experiments</p>
+          <h1 id="page-title">Kern Labs</h1>
+          <p class="hero-copy">
+            Kern Labs builds bright, focused software for the web and iPhone.
+            Our apps are designed to feel simple, polished, and useful from the
+            first tap.
+          </p>
+          <div class="hero-actions" aria-label="Featured destinations">
+            <a class="button button-primary" href="apps/mate-in-1.html">Explore Mate in 1</a>
+            <a class="button button-secondary" href="contact.html">Contact us</a>
+          </div>
+        </div>
+
         <div class="product-preview" aria-label="Abstract app preview">
           <div class="phone-frame">
             <div class="phone-status">
@@ -35,11 +55,43 @@
           </div>
           <div class="floating-card floating-card-primary">
             <span class="dot"></span>
-            <span>Launching soon</span>
+            <span>Independent apps</span>
           </div>
           <div class="floating-card floating-card-secondary">
             <span>Designed with care</span>
           </div>
+        </div>
+      </section>
+
+      <section class="section-panel" aria-labelledby="apps-title">
+        <div class="section-heading">
+          <p class="eyebrow">Published apps</p>
+          <h2 id="apps-title">Chess puzzle apps for focused practice.</h2>
+          <p>
+            Mate in 1 and Mate in 2 are lightweight iOS chess trainers built
+            around curated checkmate patterns, quick sessions, and a calm mobile
+            interface.
+          </p>
+        </div>
+        <div class="app-card-grid">
+          <article class="app-card">
+            <div class="app-card-icon">♞</div>
+            <h3>Mate in 1</h3>
+            <p>
+              Practice immediate checkmates and sharpen tactical recognition one
+              position at a time.
+            </p>
+            <a class="text-link" href="apps/mate-in-1.html">View app details</a>
+          </article>
+          <article class="app-card">
+            <div class="app-card-icon app-card-icon-gold">♘</div>
+            <h3>Mate in 2</h3>
+            <p>
+              Build deeper calculation skills by finding forcing two-move mate
+              sequences.
+            </p>
+            <a class="text-link" href="apps/mate-in-2.html">View app details</a>
+          </article>
         </div>
       </section>
     </main>
